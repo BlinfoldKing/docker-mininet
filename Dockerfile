@@ -1,11 +1,11 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 
 USER root
 WORKDIR /root
 
 COPY ENTRYPOINT.sh /
 
-RUN apt-get install -y --no-install-recommends \
+RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     iproute2 \
     iputils-ping \
