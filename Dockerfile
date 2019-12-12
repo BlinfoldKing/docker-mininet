@@ -5,7 +5,7 @@ WORKDIR /root
 
 COPY ENTRYPOINT.sh /
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get install -y --no-install-recommends \
     curl \
     iproute2 \
     iputils-ping \
